@@ -23,7 +23,6 @@ public class ReviewServiceImpl implements ReviewService {
 
 	@Override
 	public Review getReview(int id) {
-		repo.updateViewCnt(id);
 		return repo.selectOne(id);
 	}
 
