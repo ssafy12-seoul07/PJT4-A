@@ -21,7 +21,7 @@
 			<textarea rows="10" cols="30" name="content"></textarea>
 		</div>
 		<div>
-			<input type="submit" value="게시글 등록">
+			<input type="submit" value="리뷰등록">
 		</div>
 	</form>
 </body>
