@@ -7,10 +7,10 @@
 <title>상세페이지</title>
 </head>
 <body>
-	<div>${review.title }</div>
+	<div>${review.userName }</div>
 	<div>${review.content }</div>
 	
-	<a href="review?action=delete&id=${review.id}">삭제</a>
-	<a href="review?action=updateform&id=${review.id}">수정</a>
+	<a href="review?action=delete&id=${review.reviewId}">삭제</a>
+	<a href="review?action=updateform&id=${review.reviewId}">수정</a>
 </body>
 </html>
