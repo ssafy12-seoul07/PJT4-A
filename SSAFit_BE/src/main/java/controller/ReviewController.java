@@ -20,6 +20,7 @@ public class ReviewController extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String action = request.getParameter("action");
+		
 		switch (action) {
 		case "writeform": 
 			doWriteForm(request, response);

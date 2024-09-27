@@ -11,17 +11,15 @@
 	<table>
 		<tr>
 			<th>ID</th>
-			<th>제목</th>
+			<th>리뷰</th>
 			<th>글쓴이</th>
-			<th>조회수</th>
 			<th>등록일</th>
 		</tr>
 		<c:forEach items="${list}" var="review">
 			<tr>
-				<td>${review.id}</td>
-				<td><a href="review?action=detail&id=${review.id}">${review.title}</a></td>
-				<td>${review.writer}</td>
-				<td>${review.viewCnt}</td>
+				<td>${review.reviewId}</td>
+				<td><a href="review?action=detail&id=${review.reviewId}">${review.content}</a></td>
+				<td>${review.userName}</td>
 				<td>${review.regDate}</td>
 			</tr>
 		</c:forEach>
