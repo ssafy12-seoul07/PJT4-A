@@ -7,6 +7,7 @@ public class Review {
 	private String regDate;
 	
 	
+	
 	public Review(int reviewId, String userName, String content, String regDate) {
 		this.reviewId = reviewId;
 		this.userName = userName;
