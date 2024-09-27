@@ -6,7 +6,9 @@ public class Review {
 	private String content;
 	private String regDate;
 	
-	
+	public Review() {
+		
+	}
 	
 	public Review(int reviewId, String userName, String content, String regDate) {
 		this.reviewId = reviewId;
