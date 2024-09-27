@@ -9,10 +9,10 @@
 <body>
 	<h2>리뷰 수정</h2>
 	<form action="review" method="POST">
-		<input type="hidden" name="action" value="update"> <input
-			type="hidden" name="id" value="${review.reviewId }">
+		<input type="hidden" name="action" value="update">
+		<input type="hidden" name="id" value="${review.reviewId }">
 		<div>
-			리뷰 작성자 : <input type="text" name="writer" value="${review.userName }">
+			리뷰 작성자 : <input type="text" name="userName" value="${review.userName }">
 		</div>
 		<div>
 			리뷰 내용 :

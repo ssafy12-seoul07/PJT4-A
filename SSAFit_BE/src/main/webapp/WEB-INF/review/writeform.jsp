@@ -14,7 +14,7 @@
 			리뷰 제목 : <input type="text" name="title">
 		</div>
 		<div>
-			리뷰 작성자 : <input type="text" name="writer" value="익명">
+			리뷰 작성자 : <input type="text" name="userName" value="익명">
 		</div>
 		<div>
 			리뷰 내용 :

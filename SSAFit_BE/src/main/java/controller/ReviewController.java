@@ -66,7 +66,7 @@ public class ReviewController extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("id"));
 		
 		Review review = service.getReview(id);
-		request.setAttribute("reivew", review);
+		request.setAttribute("review", review);
 		request.getRequestDispatcher("/WEB-INF/review/updateform.jsp").forward(request, response);
 	}
 

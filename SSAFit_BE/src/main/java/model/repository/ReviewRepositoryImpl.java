@@ -8,7 +8,6 @@ public class ReviewRepositoryImpl implements ReviewRepository {
 	
 	private static ReviewRepository repo = new ReviewRepositoryImpl();
 	
-	private List<Review> list = new ArrayList<>();
 	private Map<Integer, Review> reviews = new HashMap<>();
 	
 	private ReviewRepositoryImpl() {
@@ -36,13 +35,12 @@ public class ReviewRepositoryImpl implements ReviewRepository {
 
 	@Override
 	public void insertReview(Review review) {
-		reviews.put(review.getReviewId(), review);	//ID를 키로 해서 맵으로관리
-		list.add(review); //리스트로 목록을 관리
+		reviews.put(review.getReviewId(), review);	
 	}
 
 	@Override
 	public void updateReview(Review review) {
-		reviews.put(review.getReviewId(), review); //맵으로
+		reviews.put(review.getReviewId(), review); 
 	}
 
 	@Override
