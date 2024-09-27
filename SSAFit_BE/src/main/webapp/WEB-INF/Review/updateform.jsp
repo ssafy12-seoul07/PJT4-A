@@ -10,16 +10,16 @@
 	<h2>리뷰 수정</h2>
 	<form action="review" method="POST">
 		<input type="hidden" name="action" value="update"> <input
-			type="hidden" name="id" value="${review.id }">
+			type="hidden" name="id" value="${review.reviewId }">
 		<div>
-			리뷰 작성자 : <input type="text" name="writer" value="${review.writer }">
+			리뷰 작성자 : <input type="text" name="writer" value="${review.userName }">
 		</div>
 		<div>
 			리뷰 내용 :
 			<textarea rows="10" cols="30" name="content">${review.content}</textarea>
 		</div>
 		<div>
-			<input type="submit" value="게시글 수정">
+			<input type="submit" value="리뷰 수정">
 		</div>
 	</form>
 </body>
